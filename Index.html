@@ -1,0 +1,897 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reel bazar | India's Largest 1.5 Lakh+ Reels Bundle</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for English & Hindi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'Hind', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#22c55e',
+                            glow: '#39ff14',
+                            dark: '#060a12',
+                            card: '#0f1624',
+                            accent: '#facc15',
+                            red: '#ef4444'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060a12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #22c55e;
+            border-radius: 4px;
+        }
+        /* Glow & Shadow Effects */
+        .neon-glow {
+            text-shadow: 0 0 12px rgba(57, 255, 20, 0.6), 0 0 24px rgba(57, 255, 20, 0.3);
+        }
+        .box-glow {
+            box-shadow: 0 0 35px rgba(34, 197, 94, 0.25);
+        }
+        .yellow-badge-glow {
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
+        }
+        /* Styling Razorpay dynamically generated button */
+        .razorpay-container .razorpay-payment-button {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 12px !important;
+            width: 100% !important;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+            color: #ffffff !important;
+            font-family: 'Poppins', 'Hind', sans-serif !important;
+            font-weight: 900 !important;
+            font-size: 1.25rem !important; /* 20px */
+            padding: 1.1rem 2rem !important;
+            border-radius: 1rem !important;
+            border: 2px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 10px 30px -5px rgba(239, 68, 68, 0.5) !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            letter-spacing: 0.05em !important;
+            text-transform: uppercase !important;
+        }
+        .razorpay-container .razorpay-payment-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 15px 35px -5px rgba(239, 68, 68, 0.7) !important;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans selection:bg-brand-green selection:text-black overflow-x-hidden">
+
+    <!-- Top Urgent Dynamic Countdown Banner -->
+    <div class="bg-brand-red text-white py-2 px-4 text-center font-bold text-xs md:text-sm sticky top-0 z-50 flex items-center justify-center gap-2 shadow-lg">
+        <span class="animate-pulse">⚠️ ONLY FOR TODAY: MEGA DISCOUNT ENDS IN</span>
+        <span id="countdown-timer" class="bg-black text-brand-accent px-3 py-0.5 rounded text-mono font-black border border-brand-accent/50">14:59</span>
+    </div>
+
+    <!-- Navigation Brand Header -->
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between border-b border-white/5">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-brand-green flex items-center justify-center font-black text-black text-lg shadow-lg shadow-brand-green/20">
+                RB
+            </div>
+            <span class="text-xl font-extrabold tracking-tight">Reel<span class="text-brand-green">bazar</span></span>
+        </div>
+        <div class="flex items-center gap-2 bg-brand-green/10 px-3 py-1 rounded-full border border-brand-green/20 text-xs font-semibold text-brand-glow">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-green animate-ping"></span>
+            <span>Secure Gate Enabled</span>
+        </div>
+    </nav>
+
+    <!-- Main Header Hero -->
+    <header class="py-10 px-4 text-center bg-gradient-to-b from-brand-green/10 to-transparent">
+        <div class="inline-block bg-white text-black text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-4 transform -rotate-1 shadow-md">
+            बच्चे दूर रहे 🙏 <span class="text-brand-red font-extrabold">FOR CREATORS & RESELLERS</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-none mt-2">
+            ALL NEW <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-glow to-brand-green neon-glow">REELS BUNDLE</span>
+        </h1>
+        <p class="text-sm md:text-lg text-gray-400 mt-3 max-w-2xl mx-auto">
+            Get instant access to 1,50,000+ Premium, No-Watermark & Copyright-free reels categorized into 27 hyper-viral folders.
+        </p>
+        <p class="text-brand-accent text-xs md:text-sm font-black tracking-widest mt-4 uppercase flex items-center justify-center gap-1">
+            <span>VALUE FOR MONEY</span>
+            <i class="fa-solid fa-hand-point-down animate-bounce ml-1"></i>
+        </p>
+    </header>
+
+    <!-- Product Showcase -->
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Side: 3D-Style Premium Packaging Mockup -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center relative mb-6 lg:mb-0">
+                <div class="absolute w-72 h-72 md:w-96 md:h-96 rounded-full bg-brand-green/10 blur-3xl -z-10 animate-pulse-slow"></div>
+                
+                <!-- Rotating Mockup -->
+                <div class="relative w-64 h-96 md:w-72 md:h-[420px] transition-transform duration-500 hover:scale-105 cursor-pointer group animate-float">
+                    
+                    <!-- Floating Star Badge -->
+                    <div class="absolute -top-6 -right-6 z-30 w-28 h-28 bg-brand-accent text-black rounded-full flex flex-col items-center justify-center font-black border-4 border-black yellow-badge-glow transform rotate-12 scale-100 group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-[10px] uppercase tracking-wider font-extrabold opacity-80 text-black">Only For</span>
+                        <span class="text-3xl font-black">₹10/-</span>
+                        <span class="text-[9px] line-through text-black/60 font-semibold">MRP ₹999</span>
+                    </div>
+
+                    <!-- 100% Original Seal -->
+                    <div class="absolute top-16 -left-6 z-20 bg-purple-600 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg border border-purple-400 uppercase tracking-widest transform -rotate-12 animate-pulse">
+                        100% ORIGINAL
+                    </div>
+
+                    <!-- 3D Box Graphics -->
+                    <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden border-2 border-brand-green/50 box-glow flex flex-col relative shadow-2xl">
+                        <div class="absolute left-0 top-0 bottom-0 w-8 bg-black/40 border-r border-white/5 z-10 flex flex-col items-center justify-center text-center py-4">
+                            <span class="text-[9px] font-bold text-gray-400 rotate-270 uppercase tracking-widest whitespace-nowrap -rotate-90 origin-center my-auto">
+                                1,50,000+ PREMIUM REELS
+                            </span>
+                        </div>
+                        
+                        <div class="flex-1 pl-12 pr-6 py-6 flex flex-col justify-between h-full bg-gradient-to-br from-gray-900 to-black">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-brand-green/20 text-brand-glow text-[10px] font-black px-2.5 py-0.5 rounded border border-brand-green/30 tracking-wider">
+                                    NEW 2026 EDITION
+                                </span>
+                                <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center bg-black/50">
+                                    <span class="font-black text-brand-glow text-xs">RB</span>
+                                </div>
+                            </div>
+                            
+                            <div class="my-6">
+                                <h2 class="text-gray-300 text-lg font-bold tracking-wider leading-none">INDIA'S</h2>
+                                <h1 class="text-white text-3xl font-extrabold tracking-tighter mt-1 leading-none">
+                                    LARGEST
+                                </h1>
+                                <div class="text-brand-glow text-4xl font-black tracking-tight my-2 drop-shadow">
+                                    1.5 LAKH+
+                                </div>
+                                <h3 class="text-white text-2xl font-extrabold tracking-tight leading-none">
+                                    REELS BUNDLE.
+                                </h3>
+                            </div>
+
+                            <div class="border-t border-white/10 pt-4 flex justify-between items-center">
+                                <p class="text-[11px] text-gray-400 italic">Reel bazar Special</p>
+                                <div class="flex gap-1 text-[10px] text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Green Glow Platform Base -->
+                <div class="w-56 h-4 bg-brand-green/40 blur-md rounded-full mt-2"></div>
+                <div class="w-64 h-8 bg-gradient-to-r from-brand-green/40 to-emerald-500/20 rounded-[100%] border-t-2 border-brand-green/80 mt-1 shadow-inner flex items-center justify-center">
+                    <span class="text-[10px] text-brand-glow font-bold tracking-widest uppercase">Best Value Guaranteed</span>
+                </div>
+            </div>
+
+            <!-- Right Side: Features List & Direct Payment -->
+            <div class="lg:col-span-7 flex flex-col justify-center space-y-6">
+                
+                <div class="bg-brand-card p-6 rounded-2xl border border-white/5 shadow-xl relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-green/10 rounded-full blur-2xl"></div>
+
+                    <h3 class="text-xl font-extrabold text-white flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
+                        <i class="fa-solid fa-circle-check text-brand-green text-2xl"></i>
+                        What you get for only ₹10:
+                    </h3>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">27 Organized Google Drive Folders</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">100% No Logos / Watermarks</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">Free Lifetime Updates</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">Full HD Quality Videos</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">100% Reselling & Editing Rights</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-black/30 p-2.5 rounded-lg border border-white/5 hover:border-brand-green/30 transition-colors">
+                            <i class="fa-solid fa-square-check text-brand-glow text-lg"></i>
+                            <span class="font-semibold text-gray-200">Direct High Speed Downloads</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Price Area and Embedded Razorpay CTA Button -->
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-brand-green/10 p-4 rounded-2xl border border-brand-green/30">
+                        <div class="text-center sm:text-left">
+                            <span class="text-xs text-brand-glow font-bold tracking-widest uppercase">LIMITED OFFER PRICE</span>
+                            <div class="flex items-center justify-center sm:justify-start gap-3 mt-1">
+                                <span class="text-4xl font-black text-brand-accent">₹10/-</span>
+                                <span class="text-sm text-gray-400 line-through">MRP ₹999/-</span>
+                                <span class="bg-brand-red text-white text-[10px] font-bold px-2 py-0.5 rounded-full">Save 99%</span>
+                            </div>
+                        </div>
+                        <div class="text-center sm:text-right">
+                            <p class="text-xs text-brand-glow font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> Razorpay Secured Gateway</p>
+                            <p class="text-[11px] text-gray-400 mt-0.5">Instant Access Upon Purchase</p>
+                        </div>
+                    </div>
+
+                    <!-- Genuine Embedded Razorpay Payment Button -->
+                    <div class="razorpay-container relative p-1 z-30">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_TAeB9bvgBzu3lg" async> </script>
+                        </form>
+                    </div>
+
+                    <!-- Unlock Instruction Note -->
+                    <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-3 text-xs text-amber-300 flex items-start gap-2.5">
+                        <i class="fa-solid fa-circle-info mt-0.5 text-base text-amber-400"></i>
+                        <div>
+                            <span class="font-bold">पेमेंट करने के बाद:</span> नीचे दिए गए <span class="font-black underline text-white">Already Paid?</span> बटन पर क्लिक करें और पेमेंट डिटेल्स डालकर लिंक्स को तुरंत सुरक्षित रूप से अनलॉक करें!
+                        </div>
+                    </div>
+
+                    <!-- Quick Jump Section to Drives -->
+                    <button onclick="scrollToVerification()" class="w-full bg-slate-950 hover:bg-slate-900 text-brand-glow border-2 border-dashed border-brand-green/40 font-black py-4 px-6 rounded-2xl text-sm flex items-center justify-center gap-3 transition-all shadow-lg">
+                        <i class="fa-solid fa-unlock-keyhole text-lg animate-bounce"></i>
+                        <span>ALREADY PAID? UNLOCK DRIVE FOLDERS NOW</span>
+                    </button>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-3 gap-2 text-center text-[11px] text-gray-400 pt-3 border-t border-white/5">
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-bolt text-yellow-400 text-lg"></i>
+                            <span>Lightning Access</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-shield-check text-brand-green text-lg"></i>
+                            <span>Safe & Encrypted</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-rotate text-blue-400 text-lg"></i>
+                            <span>Lifetime Updates</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Interactive Payment Verification Section (NEW) -->
+    <section id="verification-panel" class="py-10 max-w-2xl mx-auto px-4 mt-6">
+        <div class="bg-[#12192a] border-2 border-brand-green/30 rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute -left-16 -top-16 w-36 h-36 bg-brand-green/10 rounded-full blur-2xl"></div>
+
+            <div class="text-center space-y-2 mb-6">
+                <span class="bg-brand-green/20 text-brand-glow font-bold text-xs px-3 py-1 rounded-full border border-brand-green/30 uppercase tracking-widest">
+                    SECURE UNLOCK GATEWAY
+                </span>
+                <h3 class="text-2xl font-extrabold text-white">Payment Verification Center</h3>
+                <p class="text-xs text-gray-400">Enter payment registered details below to unlock your Drive collection.</p>
+            </div>
+
+            <!-- Verification form -->
+            <div id="verify-form" class="space-y-4">
+                <div>
+                    <label class="block text-xs text-gray-300 font-bold mb-1.5 uppercase tracking-wide">Enter Email / Mobile No. (used during payment)</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" id="verify-contact" placeholder="e.g., mohit@gmail.com or 9876543210" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-green transition-all">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                        <label class="block text-xs text-gray-300 font-bold uppercase tracking-wide">Enter UPI UTR No. / Transaction ID</label>
+                        <span class="text-[10px] text-brand-glow font-bold">12 Digit Number</span>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                            <i class="fa-solid fa-receipt"></i>
+                        </span>
+                        <input type="number" id="verify-utr" placeholder="e.g., 610345678912" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand-green transition-all">
+                    </div>
+                </div>
+
+                <button onclick="startVerificationProcess()" class="w-full bg-brand-green hover:bg-emerald-500 text-black font-black py-4 rounded-xl shadow-lg shadow-brand-green/10 flex items-center justify-center gap-2 text-sm uppercase tracking-wider transition-all">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>VERIFY & UNLOCK REELS BUNDLE</span>
+                </button>
+            </div>
+
+            <!-- Verification processing states (Hidden initially) -->
+            <div id="verify-loading" class="hidden flex flex-col items-center justify-center py-8 text-center space-y-4">
+                <div class="w-14 h-14 border-4 border-t-brand-green border-brand-green/20 rounded-full animate-spin"></div>
+                <div class="space-y-1">
+                    <h4 class="font-bold text-base" id="loading-title">Initiating Secure Handshake...</h4>
+                    <p class="text-xs text-gray-400" id="loading-sub">Connecting with Razorpay transaction logs.</p>
+                </div>
+                <!-- Dynamic progress simulation text lines -->
+                <div class="text-[10px] bg-black/50 text-brand-glow px-4 py-2 rounded-lg font-mono text-left w-full max-w-xs space-y-1 border border-white/5">
+                    <div id="log-line-1" class="opacity-40">&gt; Querying database...</div>
+                    <div id="log-line-2" class="opacity-40">&gt; Validating UTR sequence...</div>
+                    <div id="log-line-3" class="opacity-40">&gt; Authenticating status...</div>
+                </div>
+            </div>
+
+            <!-- Verification Success message -->
+            <div id="verify-success-msg" class="hidden text-center py-6 space-y-4">
+                <div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mx-auto text-brand-glow text-3xl">
+                    <i class="fa-solid fa-circle-check animate-bounce"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-brand-glow">Verification Successful!</h3>
+                    <p class="text-xs text-gray-300 mt-1">Payment verified. All 27 Folders are now unlocked permanently.</p>
+                </div>
+                <button onclick="scrollToDownloads()" class="bg-white text-black font-black text-xs px-6 py-2.5 rounded-xl uppercase tracking-wider shadow-md hover:bg-gray-100 transition-all">
+                    Explore Folders Now <i class="fa-solid fa-arrow-down ml-1"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Secure Interactive Drive Download & Access Center -->
+    <section id="download-panel" class="py-12 bg-gradient-to-b from-brand-card to-brand-dark border-y border-white/5 mt-12 relative">
+        
+        <!-- Big Locked Cover Overlay when State is Locked -->
+        <div id="drive-locked-overlay" class="absolute inset-0 bg-black/85 backdrop-blur-md z-40 flex flex-col items-center justify-center p-6 text-center">
+            <div class="w-20 h-20 bg-brand-red/20 rounded-full flex items-center justify-center text-brand-red text-4xl mb-4 border border-brand-red/30 shadow-lg animate-pulse">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black text-white">DRIVE CONTENT LOCKED</h3>
+            <p class="text-sm text-gray-400 mt-2 max-w-md">
+                All 27 premium folders containing 1.5 Lakh+ reels are securely locked. Please buy first for ₹10 and verify payment to instantly unlock access.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-6">
+                <button onclick="scrollToCTA()" class="bg-gradient-to-r from-brand-red to-rose-600 text-white font-black text-xs px-6 py-3.5 rounded-xl uppercase tracking-widest shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-receipt"></i> Pay ₹10 & Unlock
+                </button>
+                <button onclick="scrollToVerification()" class="bg-slate-850 hover:bg-slate-800 text-brand-glow border border-brand-green/30 font-black text-xs px-6 py-3.5 rounded-xl uppercase tracking-widest transition-all">
+                    Already Paid? Click here
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="text-center mb-8">
+                <span class="bg-brand-green/20 text-brand-glow font-bold text-xs px-3 py-1 rounded-full border border-brand-green/30 uppercase tracking-widest">
+                    REEL BAZAR DIRECT ACCESS CENTER
+                </span>
+                <h2 class="text-2xl md:text-4xl font-extrabold mt-3 flex items-center justify-center gap-2">
+                    <span id="lock-state-icon" class="text-brand-red"><i class="fa-solid fa-lock-keyhole"></i></span>
+                    All 27 Organized Folders
+                </h2>
+                <p class="text-sm text-gray-400 mt-1">If you have paid, download or view folders directly by clicking below.</p>
+                
+                <!-- Quick Search Bar to find categories instantly -->
+                <div class="max-w-md mx-auto mt-6 relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" id="folder-search" oninput="searchFolders()" placeholder="Search folders (e.g., AI, Gym, Trading...)" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green">
+                </div>
+            </div>
+
+            <!-- Download Folders Grid -->
+            <div id="folders-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <!-- Folder 1 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="ai hindi avatars pack 1 character viral">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🤖</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">AI Hindi Avatars (Pack 1)</h4>
+                            <p class="text-[11px] text-gray-400">Viral AI Characters</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1QREdguUC-VAZ-Me_kPbbJ1u3xjc-jf6K" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 2 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="stock market trading finance investing investing money">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">📈</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Stock Market & Trading</h4>
+                            <p class="text-[11px] text-gray-400">Finance & Investing Niche</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1_JDuQqRyk5hDe6JiTVHwRx3c51BtHWQu" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 3 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="mindset motivation hindi motivational quotes quotes">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">💡</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Mindset & Motivation</h4>
+                            <p class="text-[11px] text-gray-400">Hindi Motivational Quotes</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1gkr0RrKbrz5yXGqBmWkbCu4L5PbFSam3" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 4 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="bhagavad gita wisdom sanskrit hindi slokas sloka spirtual religious">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🕉️</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Bhagavad Gita Wisdom</h4>
+                            <p class="text-[11px] text-gray-400">Sanskrit & Hindi Slokas</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1q06oyJq5SXegTeRnl_CRY0_nbttX_P62" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 5 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="gym motivation fitness workout transformation body exercise">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">💪</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Gym Motivation & Fitness</h4>
+                            <p class="text-[11px] text-gray-400">Workout & Transformation</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 6 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="startup business entrepreneurship stories case studies companies rich">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🚀</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Startup & Business Stories</h4>
+                            <p class="text-[11px] text-gray-400">Case Studies & Business Hacks</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1uvX4I50ffSWSI4I0391SHuMA87ap8MEL" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 7 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="luxury lifestyle cars supercars rich lifestyle travel wealth">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🚗</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Luxury Lifestyle & Cars</h4>
+                            <p class="text-[11px] text-gray-400">Supercars & Luxury Living</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/17TZxcANBRfCZQL0G0ZUnIeQ2FyVElq6A" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 8 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="satisfying woodworking art crafts asmr tools wood woodcraft">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">⚙️</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Satisfying Woodworking</h4>
+                            <p class="text-[11px] text-gray-400">Art, Crafts & Satisfying DIYs</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1maID_DgrGhrXMvCs7d7JtGPorOmMfbKH" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 9 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="space sci-fi facts cosmic wonders planet galaxy science universe">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🛸</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Space & Sci-Fi Facts</h4>
+                            <p class="text-[11px] text-gray-400">Galaxy, Planets & Universe Facts</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1AZgXm_-4wcHoRVSc0hNYtBPTmiYyvjKU" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 10 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="ai hindi avatars pack 2 character viral more voices talking avatar">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🔥</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">AI Hindi Avatars (Pack 2)</h4>
+                            <p class="text-[11px] text-gray-400">Additional Talking AI Faces</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1UWRU6AtXQtpug36uWv4KXGw74D9UBRrb" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 11 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="gaming anime highlights esports games clips cod freefire pubg">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🎮</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Gaming & Anime Highlights</h4>
+                            <p class="text-[11px] text-gray-400">Esports & Anime Clips</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1WonooF1nCX4aPtSpHjr_fpichdMOzTA8" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 12 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="asmr cooking recipes food street food preparation baking kitchen">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🍳</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">ASMR Cooking & Recipes</h4>
+                            <p class="text-[11px] text-gray-400">Satisfying Viral Food Preparation</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1hORlkH0vM3URCr7xVvy5fghMe7gh5r2o" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 13 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="science experiments gk basic learning space chemistry physics tricks school">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🧠</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Science Experiments & GK</h4>
+                            <p class="text-[11px] text-gray-400">Interesting General Knowledge</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1YKqZJe120qfeXoGIflkgjRC8z4-pdVks" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 14 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="tech gadgets unboxing cool products smartphones accessories techlife reviews">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">📱</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Tech Gadgets & Unboxing</h4>
+                            <p class="text-[11px] text-gray-400">Cool Gadgets & Future Tools</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1UTdDNd0ad4rY_FtG3laCO7xZpnE9IBU5" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 15 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="digital art design painting drawing creative satisfying artist color">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🎨</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Digital Art & Painting</h4>
+                            <p class="text-[11px] text-gray-400">Satisfying Creative Arts</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1wfKMk-zvCw-iaKDX8Kb0JkbCx9dUg9ug" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 16 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="devotional sanatan shorts hindu culture temples mahadev krishna ram god">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🕉️</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Devotional (Sanatan Edition)</h4>
+                            <p class="text-[11px] text-gray-400">Spiritual Reels & Temples</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1XZ00wKCxPruEpTyDmRxtLzP3GxPG3N1W" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 17 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="funny pets animals cats dogs cute funny clips viral animals">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🐕</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Funny Pets & Animals</h4>
+                            <p class="text-[11px] text-gray-400">Viral Cat, Dog & Pet Clips</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/187a-ja5HS16Quki6JnsAxeXJayd4QlOd" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 18 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="nature travel cinematics landscapes drone shots aesthetic mountains beaches holiday">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">✈️</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Nature & Cinematics</h4>
+                            <p class="text-[11px] text-gray-400">Beautiful Destinations & Nature</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1caLlhi56DfeNIJsoySa6Zh7G_tT3sujm" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 19 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="amazing life hacks diy tips tricks household smart living kitchen hacks">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🛠️</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Amazing Life Hacks</h4>
+                            <p class="text-[11px] text-gray-400">DIY Tips, Smart Hacks & Tricks</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1DygXheyCQ86d00C4AtZNj5ltVK_5D4yf" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 20 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="self defense martial arts karate security hacks workout boxing defense">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🥋</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Self Defense & Martial Arts</h4>
+                            <p class="text-[11px] text-gray-400">Combat Fitness & Security Tricks</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1jesQ7V_duScTQ9W02bCPsvc8ffXSabxP" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 21 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="men women fashion guides clothing style outfits dress up wardrobe hacks">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">👗</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Fashion & Styling Guides</h4>
+                            <p class="text-[11px] text-gray-400">Outfits, Styling & Wardrobe Hacks</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1d3nz5s_qdCtuP_W_A5pEdWLkV7Gw2Vzs" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 22 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="photography mobile hacks smartphone pro editing photoshoot posing angles">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">📸</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Mobile Photography Hacks</h4>
+                            <p class="text-[11px] text-gray-400">Mobile Camera Tricks & Poses</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1vp1RfFk0g3BQjXMo3QMbddgmm0Y3fNUO" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 23 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="beauty makeup hacks skincare remedies makeup tutorial hair styling cosmetic beauty tips">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">💄</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Beauty & Makeup Hacks</h4>
+                            <p class="text-[11px] text-gray-400">Skincare Tips & Viral Makeup Tutorials</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1Bb3o-hkqY4Qs5sKI1u2Xz3LtsSXAMiOz" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 24 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="ai business ideas passive income cashcow channels automation money online fast growth">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">📈</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">AI Business Ideas</h4>
+                            <p class="text-[11px] text-gray-400">Cashcow Ideas & Passive Automation</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1I0wB7nZr7xOhzGIhfGDV6eRfa7VNd6hp" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 25 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="marketing secrets viral growth audience building sale funnel copywriting advertising">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🎯</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Marketing & Growth Secrets</h4>
+                            <p class="text-[11px] text-gray-400">Viral Growth & Audience Tactics</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1oJbBwL1uYUPX0QsApXpGzEmaJGNAzm-o" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 26 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="crypto web3 shorts bitcoin ethereum nft tokens future blockchain">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🏦</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Crypto & Web3 Blockchain</h4>
+                            <p class="text-[11px] text-gray-400">Future Finance & Crypto News</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/17GPrwy7368Yq_L_gZ25ify04eRx9YZM6" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Folder 27 -->
+                <div class="folder-card bg-black/30 hover:bg-brand-green/10 border border-white/10 hover:border-brand-green p-4 rounded-xl transition-all group flex items-center justify-between" data-title="unsolved mysteries facts sci-fi alien conspiracy theories horror mystery myths">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🔮</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white group-hover:text-brand-glow transition-colors">Unsolved Mysteries & Facts</h4>
+                            <p class="text-[11px] text-gray-400">Cosmic Myths & Mysterious Stories</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1jHPbeJdDEfo4DrW2KOxNgTphQhbSim6x" target="_blank" class="text-xs bg-brand-green/20 text-brand-glow px-3 py-1.5 rounded font-bold group-hover:bg-brand-green group-hover:text-black transition-colors flex items-center gap-1">
+                        Open <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- If search yields no folder results -->
+            <div id="no-results" class="hidden text-center py-12 text-gray-400">
+                <i class="fa-solid fa-triangle-exclamation text-brand-red text-3xl mb-3"></i>
+                <p class="font-bold text-sm">No folders found matching your search term.</p>
+                <p class="text-xs mt-1 text-gray-500">Try searching for other tags like AI, Gym, Trading or Sanatan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Creators Love Our Quality Section -->
+    <section class="py-12 max-w-6xl mx-auto px-4">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-center mb-10">Why is this the best deal online?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-brand-card p-6 rounded-2xl border border-white/5 text-center">
+                <div class="w-12 h-12 rounded-full bg-brand-green/20 flex items-center justify-center mx-auto mb-4 text-brand-glow text-xl">
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+                <h4 class="text-lg font-bold mb-2">No Watermarks</h4>
+                <p class="text-gray-400 text-sm">Every reel is clean, ready for you to add your custom branding, logo, or brand typography.</p>
+            </div>
+            <div class="bg-brand-card p-6 rounded-2xl border border-white/5 text-center">
+                <div class="w-12 h-12 rounded-full bg-brand-green/20 flex items-center justify-center mx-auto mb-4 text-brand-glow text-xl">
+                    <i class="fa-solid fa-copy"></i>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Copyright Free</h4>
+                <p class="text-gray-400 text-sm">Upload on YouTube Shorts, Instagram Reels, and TikTok without any fear of copyright claims or strikes.</p>
+            </div>
+            <div class="bg-brand-card p-6 rounded-2xl border border-white/5 text-center">
+                <div class="w-12 h-12 rounded-full bg-brand-green/20 flex items-center justify-center mx-auto mb-4 text-brand-glow text-xl">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Reselling Rights Enabled</h4>
+                <p class="text-gray-400 text-sm">You have 100% full rights to edit, modify, package, and resell this entire bundle at your own price!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="py-12 max-w-4xl mx-auto px-4">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Frequently Asked Questions</h3>
+        <div class="space-y-4">
+            <div class="bg-brand-card rounded-xl border border-white/5 overflow-hidden">
+                <button onclick="toggleFAQ(1)" class="w-full text-left p-4 font-bold flex justify-between items-center hover:bg-white/5">
+                    <span>How do I access folders after paying?</span>
+                    <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-green"></i>
+                </button>
+                <div id="faq-ans-1" class="hidden p-4 pt-0 text-sm text-gray-400 border-t border-white/5">
+                    After completing the purchase via Razorpay, click on "ALREADY PAID? UNLOCK DRIVE FOLDERS NOW" button. All 27 verified Drive folders are listed securely above; just click the folder you want and access it immediately!
+                </div>
+            </div>
+            <div class="bg-brand-card rounded-xl border border-white/5 overflow-hidden">
+                <button onclick="toggleFAQ(2)" class="w-full text-left p-4 font-bold flex justify-between items-center hover:bg-white/5">
+                    <span>Will I get new reels in the future?</span>
+                    <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-green"></i>
+                </button>
+                <div id="faq-ans-2" class="hidden p-4 pt-0 text-sm text-gray-400 border-t border-white/5">
+                    Yes! We add fresh, trending viral reels regularly to these folders. Since you get lifetime access, all future updates inside these folders are completely free.
+                </div>
+            </div>
+            <div class="bg-brand-card rounded-xl border border-white/5 overflow-hidden">
+                <button onclick="toggleFAQ(3)" class="w-full text-left p-4 font-bold flex justify-between items-center hover:bg-white/5">
+                    <span>Are these downloads high quality?</span>
+                    <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-green"></i>
+                </button>
+                <div id="faq-ans-3" class="hidden p-4 pt-0 text-sm text-gray-400 border-t border-white/5">
+                    Absolutely. All clips are in ultra-sharp 1080p Full HD resolution, optimized perfectly to fit vertical mobile screens.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="bg-black py-12 px-4 border-t border-white/10 text-center text-sm text-gray-500">
+        <div class="max-w-6xl mx-auto space-y-4">
+            <p class="font-bold text-white flex items-center justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                Reel bazar | Premium Products Store
+            </p>
+            <p class="max-w-xl mx-auto text-xs leading-relaxed text-gray-400">
+                Contact: support@reelbazar.com | After payment confirmation, enjoy lightning-fast access to these 27 highly curated Drive folders. Keep this landing page bookmarked.
+            </p>
+            <p class="text-xs">&copy; 2026 Reel bazar. All Rights Reserved.</p>
+        </div>
+        <!-- Padding to avoid overlap with sticky footer on mobile -->
+        <

@@ -19,7 +19,7 @@
     <!-- Timer Section -->
     <div class="bg-red-600 text-white py-3 px-4 text-center font-bold text-sm md:text-base sticky top-0 z-50 shadow-lg">
         <span class="animate-pulse">⚠️ ONLY FOR TODAY: MEGA DISCOUNT ENDS IN</span>
-        <span id="countdown-timer" class="bg-black text-green-400 px-3 py-1 rounded-full font-mono font-bold ml-2 neon-glow">15:00</span>
+        <span id="countdown-timer" class="bg-black text-green-400 px-3 py-1 rounded-full font-mono font-bold ml-2 neon-glow">14:59</span>
     </div>
 
     <!-- Main Content -->
@@ -44,7 +44,6 @@
                     <span class="text-5xl font-bold text-green-400">₹10/-</span> 
                     <span class="text-gray-500 line-through text-2xl ml-2">₹999</span>
                 </div>
-                <!-- Add your actual Razorpay button form or link here -->
                 <button class="bg-gradient-to-r from-green-500 to-green-700 text-black font-bold py-3 px-8 rounded-full text-lg w-full transition hover:scale-105 duration-300 neon-glow">
                     Download Now
                 </button>
@@ -61,7 +60,6 @@
                     <div class="aspect-video relative">
                         <video class="w-full h-full object-cover" autoplay loop muted playsinline>
                             <source src="your-video-1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="p-4"><h3 class="font-semibold text-center">Viral Reel 1</h3></div>
@@ -106,6 +104,43 @@
                 <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 neon-border transition hover:scale-105 duration-300">
                     <div class="aspect-video relative">
                         <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                            <source src="your-video-6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-4"><h3 class="font-semibold text-center">Viral Reel 6</h3></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Timer Script -->
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fifteenMinutes = 60 * 15,
+                display = document.querySelector('#countdown-timer');
+            startTimer(fifteenMinutes, display);
+        };
+    </script>
+</body>
+</html>
                             <source src="your-video-6.mp4" type="video/mp4">
                         </video>
                     </div>
